@@ -166,6 +166,8 @@ class Modules:
 
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
                 text_param_mapped = tf.reshape(text_param_mapped, to_T([N, 1, 1, map_dim]))
+                text_param_mapped2 = fc('fc_text', text_param, output_dim=map_dim)
+                text_param_mapped2 = tf.reshape(text_param_mapped, to_T([N, 1, 1, map_dim]))
 
                 att_softmax = tf.reshape(
                     tf.nn.softmax(tf.reshape(input_0, to_T([N, H*W]))),
@@ -176,7 +178,7 @@ class Modules:
                     fc('fc_att', att_feat, output_dim=map_dim), to_T([N, 1, 1, map_dim]))
 
                 eltwise_mult = tf.nn.l2_normalize(
-                    image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
+                    image_feat_mapped * text_param_mapped *text_param_mapped2* att_feat_mapped, 3)
                 att_grid = _1x1_conv('conv_eltwise', eltwise_mult, output_dim=1)
 
         att_grid.set_shape(self.att_shape)
@@ -299,7 +301,7 @@ class Modules:
                 att_max = tf.reduce_max(input_0, axis=[1, 2])
                 # att_reduced has shape [N, 3]
                 att_concat = tf.concat([att_all, att_min, att_max], axis=1)
-                scores = fc_relu('fc_scores', att_concat, output_dim=self.num_choices)
+                scores = fc('fc_scores', att_concat, output_dim=self.num_choices)
                 #att_maps = _conv('conv_maps', input_0, kernel_size=kernel_size,stride=1, output_dim=map_dim)
                 #att_shape = tf.shape(att_maps)
                 #N = att_shape[0]
@@ -485,6 +487,7 @@ class Modules:
                 D_txt = text_param.get_shape().as_list()[-1]
 
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
+                text_param_mapped2 = fc('fc_text2', text_param, output_dim=map_dim)
 
                 att_softmax = tf.reshape(
                     tf.nn.softmax(tf.reshape(input_0, to_T([N, H*W]))),
@@ -496,7 +499,7 @@ class Modules:
                     fc('fc_att', att_feat, output_dim=map_dim),
                     to_T([N, map_dim]))
 
-                eltwise_mult = tf.nn.l2_normalize(text_param_mapped * att_feat_mapped, 1)
+                eltwise_mult = tf.nn.l2_normalize(text_param_mapped * text_param_mapped * att_feat_mapped, 1)
                 scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)
 
         return scores
