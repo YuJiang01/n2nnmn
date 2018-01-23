@@ -300,13 +300,13 @@ class Modules:
                 # att_reduced has shape [N, 3]
                 #att_concat = tf.concat([att_all, att_min, att_max], axis=1)
                 #scores = fc('fc_scores', att_concat, output_dim=self.num_choices)
-		att_maps = _conv('conv_maps', input_0, kernel_size=kernel_size,stride=1, output_dim=map_dim)
-		att_shape = tf.shape(att_maps)
+                att_maps = _conv('conv_maps', input_0, kernel_size=kernel_size,stride=1, output_dim=map_dim)
+                att_shape = tf.shape(att_maps)
                 N = att_shape[0]
                 H = att_shape[1]
                 W = att_shape[2]
-		att_all = tf.reshape(att_maps, to_T([-1, H*W]))
-		scores = fc('fc_scores', att_all, output_dim=self.num_choices)
+                att_all = tf.reshape(att_maps, to_T([-1, H*W]))
+                scores = fc('fc_scores', att_all, output_dim=self.num_choices)
 
         return scores
 
