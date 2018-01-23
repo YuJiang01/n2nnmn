@@ -166,7 +166,7 @@ class Modules:
 
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
                 text_param_mapped = tf.reshape(text_param_mapped, to_T([N, 1, 1, map_dim]))
-                text_param_mapped2 = fc('fc_text', text_param, output_dim=map_dim)
+                text_param_mapped2 = fc('fc_text2', text_param, output_dim=map_dim)
                 text_param_mapped2 = tf.reshape(text_param_mapped, to_T([N, 1, 1, map_dim]))
 
                 att_softmax = tf.reshape(
@@ -178,7 +178,7 @@ class Modules:
                     fc('fc_att', att_feat, output_dim=map_dim), to_T([N, 1, 1, map_dim]))
 
                 eltwise_mult = tf.nn.l2_normalize(
-                    image_feat_mapped * text_param_mapped *text_param_mapped2* att_feat_mapped, 3)
+                    image_feat_mapped * text_param_mapped *text_param_mapped2 * att_feat_mapped, 3)
                 att_grid = _1x1_conv('conv_eltwise', eltwise_mult, output_dim=1)
 
         att_grid.set_shape(self.att_shape)
