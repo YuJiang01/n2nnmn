@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eacceb43-050f-41aa-a385-bf501ac47efa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/models_clevr/nmn3_modules.py" afterPath="$PROJECT_DIR$/models_clevr/nmn3_modules.py" />
+      <change beforePath="$PROJECT_DIR$/scrips/ExtractQuestions.py" afterPath="$PROJECT_DIR$/scrips/ExtractQuestions.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nmn3_modules.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nmn3_modules.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_modules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="301" column="33" lean-forward="false" selection-start-line="301" selection-start-column="33" selection-end-line="301" selection-end-column="33" />
+            <state relative-caret-position="313">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtractQuestions.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrips/ExtractQuestions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_clevr_gt_layout.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exp_clevr/train_clevr_gt_layout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -26,6 +50,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -39,6 +70,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/models_clevr/nmn3_modules.py" />
+        <option value="$PROJECT_DIR$/scrips/ExtractQuestions.py" />
       </list>
     </option>
   </component>
@@ -68,6 +100,11 @@
             <path>
               <item name="n2nnmn" type="b2602c69:ProjectViewProjectNode" />
               <item name="n2nnmn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="n2nnmn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="n2nnmn" type="462c0819:PsiDirectoryNode" />
+              <item name="exp_clevr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="n2nnmn" type="b2602c69:ProjectViewProjectNode" />
@@ -146,10 +183,38 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_modules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="301" column="33" lean-forward="false" selection-start-line="301" selection-start-column="33" selection-end-line="301" selection-end-column="33" />
+        <state relative-caret-position="313">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models_clevr/extract_questions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp_clevr/train_clevr_gt_layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrips/ExtractQuestions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
