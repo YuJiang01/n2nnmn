@@ -499,7 +499,7 @@ class Modules:
                     fc('fc_att', att_feat, output_dim=map_dim),
                     to_T([N, map_dim]))
 
-                eltwise_mult = tf.nn.l2_normalize(text_param_mapped * text_param_mapped * att_feat_mapped, 1)
+                eltwise_mult = tf.nn.l2_normalize(text_param_mapped * text_param_mapped2 * att_feat_mapped, 1)
                 scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)
 
         return scores
