@@ -1,0 +1,10 @@
+Loading imdb from file...Done
+imdb does not contain answers
+imdb does not contain ground-truth layout
+Running test...
+data reader: one pass finished
+On split: tst
+	answer accuracy = 0.000000 (0 / 149988)
+	layout accuracy = 0.000000 (0 / 149988)
+	layout validity = 1.000000 (149988 / 149988)
+prediction file written to ./exp_clevr/eval_outputs/clevr_gt_layout/00050000.tst.txt

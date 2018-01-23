@@ -1,0 +1,8 @@
+Loading imdb from file...Done
+Running test...
+data reader: one pass finished
+On split: val
+	answer accuracy = 0.854458 (128161 / 149991)
+	layout accuracy = 0.968125 (145210 / 149991)
+	layout validity = 1.000000 (149991 / 149991)
+prediction file written to ./exp_clevr/eval_outputs/clevr_rl_gt_layout/00050000.val.txt
