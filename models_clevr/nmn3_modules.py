@@ -492,7 +492,6 @@ class Modules:
                                               output_dim=map_dim)
 
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
-                text_param_mapped2 = fc('fc_text2', text_param, output_dim=map_dim)
 
                 att_softmax = tf.reshape(
                     tf.nn.softmax(tf.reshape(input_0, to_T([N, H*W]))),
@@ -504,7 +503,7 @@ class Modules:
                     fc('fc_att', att_feat, output_dim=map_dim),
                     to_T([N, map_dim]))
 
-                eltwise_mult = tf.nn.l2_normalize(image_feat_mapped * text_param_mapped * text_param_mapped2 * att_feat_mapped, 1)
+                eltwise_mult = tf.nn.l2_normalize(image_feat_mapped * text_param_mapped * att_feat_mapped, 1)
                 scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)
 
         return scores
