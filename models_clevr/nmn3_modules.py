@@ -341,7 +341,7 @@ class Modules:
                 att_concat = tf.concat([att_all_0, att_min_0, att_max_0,
                                         att_all_1, att_min_1, att_max_1],
                                        axis=1)
-                scores = fc('fc_scores', att_concat, output_dim=self.num_choices)
+                scores = fc_relu('fc_scores', att_concat, output_dim=self.num_choices)
 
         return scores
 
