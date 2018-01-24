@@ -167,7 +167,7 @@ class Modules:
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
                 text_param_mapped = tf.reshape(text_param_mapped, to_T([N, 1, 1, map_dim]))
 
-                text_param_con_mapped = conv("conv_text",text_param, output_dim=map_dim);
+                text_param_con_mapped = _conv("conv_text",text_param, output_dim=map_dim);
                 text_param_con_mapped = tf.reshape(text_param_con_mapped,to_T([N, 1, 1, map_dim]))
 
                 att_softmax = tf.reshape(
