@@ -490,8 +490,9 @@ class Modules:
                 # image_feat_mapped has shape [N, H, W, map_dim]
                 image_feat_mapped = _1x1_conv('conv_image', image_feat_grid,
                                               output_dim=map_dim)
-                image_feat_mapped = tf.reshape(image_feat_mapped, to_T([N, map_dim]))
+
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
+                text_param_mapped = tf.reshape(text_param_mapped, to_T([N,1,1, map_dim]))
 
                 att_softmax = tf.reshape(
                     tf.nn.softmax(tf.reshape(input_0, to_T([N, H*W]))),
@@ -501,9 +502,9 @@ class Modules:
                 att_feat = tf.reduce_sum(image_feat_grid * att_softmax, axis=[1, 2])
                 att_feat_mapped = tf.reshape(
                     fc('fc_att', att_feat, output_dim=map_dim),
-                    to_T([N, map_dim]))
+                    to_T([N,1,1,map_dim]))
 
-                eltwise_mult = tf.nn.l2_normalize(image_feat_mapped * text_param_mapped * att_feat_mapped, 1)
+                eltwise_mult = tf.nn.l2_normalize(image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
                 scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)
 
         return scores
