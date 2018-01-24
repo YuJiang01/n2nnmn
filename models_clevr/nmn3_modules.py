@@ -180,7 +180,7 @@ class Modules:
 
                 eltwise_mult = tf.nn.l2_normalize(
                     image_feat_mapped * text_param_con_mapped * att_feat_mapped, 3)
-                att_grid = _conv('conv_eltwise', eltwise_mult, output_dim=1)
+                att_grid = _1x1_conv('conv_eltwise', eltwise_mult, output_dim=1)
 
         att_grid.set_shape(self.att_shape)
         return att_grid
