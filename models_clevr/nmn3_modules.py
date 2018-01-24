@@ -490,7 +490,7 @@ class Modules:
                 # image_feat_mapped has shape [N, H, W, map_dim]
                 image_feat_mapped = _1x1_conv('conv_image', image_feat_grid,
                                               output_dim=map_dim)
-
+                image_feat_mapped = tf.reshape(image_feat_mapped, to_T([N, map_dim]))
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
 
                 att_softmax = tf.reshape(
