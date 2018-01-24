@@ -296,20 +296,20 @@ class Modules:
         #   1. linear transform of the attention map (also including max and min)
         with tf.variable_scope(self.module_variable_scope):
             with tf.variable_scope(scope, reuse=reuse):
-                #H, W = self.att_shape[1:3]
-                #att_all = tf.reshape(input_0, to_T([-1, H*W]))
-                #att_min = tf.reduce_min(input_0, axis=[1, 2])
-                #att_max = tf.reduce_max(input_0, axis=[1, 2])
-                # att_reduced has shape [N, 3]
-                #att_concat = tf.concat([att_all, att_min, att_max], axis=1)
-                #scores = fc('fc_scores', att_concat, output_dim=self.num_choices)
-                att_maps = _conv('conv_maps', input_0, kernel_size=kernel_size,stride=1, output_dim=map_dim)
-                att_grid = _1x1_conv("conv_eltwise",att_maps,output_dim=1)
-                att_grid.set_shape(self.att_shape)
-                att_shape = tf.shape(att_grid)
                 H, W = self.att_shape[1:3]
-                att_all = tf.reshape(att_grid, to_T([-1, H*W]))
-                scores = fc('fc_scores', att_all, output_dim=self.num_choices)
+                att_all = tf.reshape(input_0, to_T([-1, H*W]))
+                att_min = tf.reduce_min(input_0, axis=[1, 2])
+                att_max = tf.reduce_max(input_0, axis=[1, 2])
+                # att_reduced has shape [N, 3]
+                att_concat = tf.concat([att_all, att_min, att_max], axis=1)
+                scores = fc('fc_scores', att_concat, output_dim=self.num_choices)
+                # att_maps = _conv('conv_maps', input_0, kernel_size=kernel_size,stride=1, output_dim=map_dim)
+                # att_grid = _1x1_conv("conv_eltwise",att_maps,output_dim=1)
+                # att_grid.set_shape(self.att_shape)
+                # att_shape = tf.shape(att_grid)
+                # H, W = self.att_shape[1:3]
+                # att_all = tf.reshape(att_grid, to_T([-1, H*W]))
+                # scores = fc('fc_scores', att_all, output_dim=self.num_choices)
 
         return scores
 
@@ -341,7 +341,8 @@ class Modules:
                 att_concat = tf.concat([att_all_0, att_min_0, att_max_0,
                                         att_all_1, att_min_1, att_max_1],
                                        axis=1)
-                scores = fc_relu('fc_scores', att_concat, output_dim=self.num_choices)
+                #scores = fc_relu('fc_scores', att_concat, output_dim=self.num_choices)
+                scores = fc('fc_scores', att_concat, output_dim=self.num_choices)
 
         return scores
 
@@ -488,7 +489,6 @@ class Modules:
                 D_txt = text_param.get_shape().as_list()[-1]
 
                 text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
-                text_param_mapped2 = fc('fc_text2', text_param, output_dim=map_dim)
 
                 att_softmax = tf.reshape(
                     tf.nn.softmax(tf.reshape(input_0, to_T([N, H*W]))),
@@ -500,7 +500,7 @@ class Modules:
                     fc('fc_att', att_feat, output_dim=map_dim),
                     to_T([N, map_dim]))
 
-                eltwise_mult = tf.nn.l2_normalize(text_param_mapped * text_param_mapped2 * att_feat_mapped, 1)
+                eltwise_mult = tf.nn.l2_normalize(text_param_mapped * att_feat_mapped, 1)
                 scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)
 
         return scores
