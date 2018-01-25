@@ -168,21 +168,20 @@ class Modules:
                 text_param_mapped = tf.reshape(text_param_mapped, to_T([N, 1, 1, map_dim]))
 
 
-                att_softmax = tf.reshape(
+                '''att_softmax = tf.reshape(
                     tf.nn.softmax(tf.reshape(input_0, to_T([N, H*W]))),
                     to_T([N, H, W, 1]))
-
-
 
                 # att_feat has shape [N, D_vis]
                 att_feat = tf.reduce_sum(image_feat_grid * att_softmax, axis=[1, 2])
                 att_feat_mapped = tf.reshape(
-                    fc('fc_att', att_feat, output_dim=map_dim), to_T([N, 1, 1, map_dim]))
+                    fc('fc_att', att_feat, output_dim=map_dim), to_T([N, 1, 1, map_dim]))'''
 
-                #eltwise_mult = tf.nn.l2_normalize(
-                #    image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
+                att_feat_mapped=_conv('conv_maps', input_0, kernel_size=250,
+                    stride=1, output_dim=map_dim)
+
                 eltwise_mult = tf.nn.l2_normalize(
-                    text_param_mapped * att_feat_mapped, 3)
+                    image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
 
                 att_grid = _1x1_conv('conv_eltwise', eltwise_mult, output_dim=1)
 
