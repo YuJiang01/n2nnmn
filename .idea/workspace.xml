@@ -16,8 +16,8 @@
       <file leaf-file-name="nmn3_modules.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_modules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="537" column="21" lean-forward="true" selection-start-line="537" selection-start-column="21" selection-end-line="537" selection-end-column="21" />
+            <state relative-caret-position="482">
+              <caret line="534" column="67" lean-forward="false" selection-start-line="534" selection-start-column="67" selection-end-line="534" selection-end-column="67" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -335,8 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_modules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="537" column="21" lean-forward="true" selection-start-line="537" selection-start-column="21" selection-end-line="537" selection-end-column="21" />
+        <state relative-caret-position="482">
+          <caret line="534" column="67" lean-forward="false" selection-start-line="534" selection-start-column="67" selection-end-line="534" selection-end-column="67" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
