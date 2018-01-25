@@ -179,10 +179,10 @@ class Modules:
                 att_feat_mapped = tf.reshape(
                     fc('fc_att', att_feat, output_dim=map_dim), to_T([N, 1, 1, map_dim]))
 
-                #eltwise_mult = tf.nn.l2_normalize(
-                #    image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
                 eltwise_mult = tf.nn.l2_normalize(
-                    text_param_mapped * att_feat_mapped, 3)
+                    image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
+                #eltwise_mult = tf.nn.l2_normalize(
+                #    text_param_mapped * att_feat_mapped, 3)
 
                 att_grid = _1x1_conv('conv_eltwise', eltwise_mult, output_dim=1)
 
