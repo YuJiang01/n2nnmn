@@ -532,7 +532,7 @@ class Modules:
                 eltwise_mult = tf.nn.l2_normalize(
                     image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
                 #att_grid = _1x1_conv('conv_eltwise', eltwise_mult, output_dim=1)
-                H2, W2 = eltwise_mult.att_shape[1:3]
+                H2, W2 = eltwise_mult.getshape[1:3]
                 att_grid_mapped = tf.reshape(eltwise_mult, to_T([[-1, H2 * W2]]))
                 scores = fc('fc_eltwise', att_grid_mapped, output_dim=self.num_choices)
 
