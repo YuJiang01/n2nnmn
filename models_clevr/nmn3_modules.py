@@ -496,7 +496,7 @@ class Modules:
                 # att_feat has shape [N, D_vis]
                 att_feat2 = tf.reduce_sum(image_feat_grid * att_softmax2, axis=[1, 2])
                 att_feat_mapped2 = tf.reshape(
-                    fc('fc_att', att_feat2, output_dim=map_dim), to_T([N, 1, 1, map_dim]))
+                    fc('fc_att2', att_feat2, output_dim=map_dim), to_T([N, 1, 1, map_dim]))
 
                 eltwise_mult = tf.nn.l2_normalize(
                     image_feat_mapped * text_param_mapped * att_feat_mapped * att_feat_mapped2, 3)
