@@ -460,11 +460,6 @@ class Modules:
                     fc('fc_att_1', att_feat_1, output_dim=map_dim),
                     to_T([N, map_dim]))
 
-                # image_feat_mapped has shape [N, H, W, map_dim]
-                image_feat_mapped = _1x1_conv('conv_image', image_feat_grid,
-                                              output_dim=map_dim)
-                
-
                 eltwise_mult = tf.nn.l2_normalize(
                     att_feat_mapped_0 * text_param_mapped * att_feat_mapped_1, 1)
                 scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)
