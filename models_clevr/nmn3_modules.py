@@ -481,7 +481,8 @@ class Modules:
         #   3. Element-wise multiplication of the two, l2_normalize, linear transform.
         with tf.variable_scope(self.module_variable_scope):
             with tf.variable_scope(scope, reuse=reuse):
-                image_shape = tf.shape(image_feat_grid)
+
+                '''image_shape = tf.shape(image_feat_grid)
                 N = tf.shape(time_idx)[0]
                 H = image_shape[1]
                 W = image_shape[2]
@@ -501,6 +502,38 @@ class Modules:
                     to_T([N, map_dim]))
 
                 eltwise_mult = tf.nn.l2_normalize(text_param_mapped * att_feat_mapped, 1)
-                scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)
+                scores = fc('fc_eltwise', eltwise_mult, output_dim=self.num_choices)'''
+
+                image_shape = tf.shape(image_feat_grid)
+                N = tf.shape(time_idx)[0]
+                H = image_shape[1]
+                W = image_shape[2]
+                D_im = image_feat_grid.get_shape().as_list()[-1]
+                D_txt = text_param.get_shape().as_list()[-1]
+
+                # image_feat_mapped has shape [N, H, W, map_dim]
+                image_feat_mapped = _1x1_conv('conv_image', image_feat_grid,
+                                              output_dim=map_dim)
+
+                text_param_mapped = fc('fc_text', text_param, output_dim=map_dim)
+                text_param_mapped = tf.reshape(text_param_mapped, to_T([N, 1, 1, map_dim]))
+
+                # text_param_con_mapped = _1x1_conv("conv_text",text_param,output_dim=map_dim);
+                # text_param_con_mapped = tf.reshape(text_param_con_mapped,to_T([N, 1, 1, map_dim]))
+
+                att_softmax = tf.reshape(
+                    tf.nn.softmax(tf.reshape(input_0, to_T([N, H * W]))),
+                    to_T([N, H, W, 1]))
+                # att_feat has shape [N, D_vis]
+                att_feat = tf.reduce_sum(image_feat_grid * att_softmax, axis=[1, 2])
+                att_feat_mapped = tf.reshape(
+                    fc('fc_att', att_feat, output_dim=map_dim), to_T([N, 1, 1, map_dim]))
+
+                eltwise_mult = tf.nn.l2_normalize(
+                    image_feat_mapped * text_param_mapped * att_feat_mapped, 3)
+                #att_grid = _1x1_conv('conv_eltwise', eltwise_mult, output_dim=1)
+                H2, W2 = eltwise_mult.att_shape[1:3]
+                att_grid_mapped = tf.reshape(eltwise_mult, to_T([[-1, H2 * W2]]))
+                scores = fc('fc_eltwise', att_grid_mapped, output_dim=self.num_choices)
 
         return scores
