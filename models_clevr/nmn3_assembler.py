@@ -20,7 +20,9 @@ _module_input_num = {
     '_MoreNum': 2,
     '_LessNum': 2,
     '_SameProperty': 2,
-    '_Describe': 1}
+    '_Describe': 1,
+    '_SamePropertyColor': 2,
+    '_DescribeColor': 1}
 
 # output type of each module
 _module_output_type = {
@@ -37,7 +39,9 @@ _module_output_type = {
     '_MoreNum': 'ans',
     '_LessNum': 'ans',
     '_SameProperty': 'ans',
-    '_Describe': 'ans'}
+    '_Describe': 'ans',
+    '_SamePropertyColor': 'ans',
+    '_DescribeColor': 'ans'}
 
 INVALID_EXPR = 'INVALID_EXPR'
 # decoding validity: maintaining a state x of [#att, #ans, T_remain]

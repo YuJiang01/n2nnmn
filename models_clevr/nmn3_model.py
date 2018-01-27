@@ -130,6 +130,19 @@ class NMN3Model:
                                            ('batch_idx', td.Scalar('int32'))])
                 case_describe = case_describe >> \
                     td.Function(modules.DescribeModule)
+                # _DescribeColor
+                case_describe_color = td.Record([('input_0', att_expr_decl()),
+                                           ('time_idx', td.Scalar('int32')),
+                                           ('batch_idx', td.Scalar('int32'))])
+                case_describe_color = case_describe_color >> \
+                                td.Function(modules.DescribeColorModule)
+                # _SameProperty
+                case_same_property_color = td.Record([('input_0', att_expr_decl()),
+                                                ('input_1', att_expr_decl()),
+                                                ('time_idx', td.Scalar('int32')),
+                                                ('batch_idx', td.Scalar('int32'))])
+                case_same_property_color = case_same_property_color >> \
+                                     td.Function(modules.SamePropertyColorModule)
 
                 recursion_cases = td.OneOf(td.GetItem('module'), {
                     '_Scene': case_scene,
@@ -152,6 +165,8 @@ class NMN3Model:
                     '_LessNum': case_less_num,
                     '_SameProperty': case_same_property,
                     '_Describe': case_describe,
+                    '_SamePropertyColor':case_same_property_color,
+                    '_DescribeColor': case_describe_color,
                     INVALID_EXPR: dummy_scores})
 
                 # compile and get the output scores

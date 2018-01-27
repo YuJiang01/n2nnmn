@@ -22,12 +22,12 @@ function2module = {
     'greater_than': '_MoreNum',
     'less_than': '_LessNum',
 
-    'equal_color': '_SameProperty',
+    'equal_color': '_SamePropertyColor',
     'equal_material': '_SameProperty',
     'equal_shape': '_SameProperty',
     'equal_size': '_SameProperty',
 
-    'query_color': '_Describe',
+    'query_color': '_DescribeColor',
     'query_material': '_Describe',
     'query_shape': '_Describe',
     'query_size': '_Describe',
