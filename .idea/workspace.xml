@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eacceb43-050f-41aa-a385-bf501ac47efa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/exp_clevr/data/get_ground_truth_layout.py" afterPath="$PROJECT_DIR$/exp_clevr/data/get_ground_truth_layout.py" />
-      <change beforePath="$PROJECT_DIR$/models_clevr/nmn3_assembler.py" afterPath="$PROJECT_DIR$/models_clevr/nmn3_assembler.py" />
-      <change beforePath="$PROJECT_DIR$/models_clevr/nmn3_model.py" afterPath="$PROJECT_DIR$/models_clevr/nmn3_model.py" />
-      <change beforePath="$PROJECT_DIR$/models_clevr/nmn3_modules.py" afterPath="$PROJECT_DIR$/models_clevr/nmn3_modules.py" />
+      <change beforePath="$PROJECT_DIR$/exp_clevr/train_clevr_scratch.py" afterPath="$PROJECT_DIR$/exp_clevr/train_clevr_scratch.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +50,8 @@
       <file leaf-file-name="nmn3_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+            <state relative-caret-position="-1115">
+              <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -74,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nmn3_netgen_att.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nmn3_netgen_att.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_netgen_att.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2067">
@@ -82,6 +79,16 @@
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_clevr_scratch.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exp_clevr/train_clevr_scratch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-174">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,16 +101,6 @@
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="empty_safe_conv.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/empty_safe_conv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="36" column="45" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="45" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -123,11 +120,9 @@
       <file leaf-file-name="train_clevr_gt_layout.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exp_clevr/train_clevr_gt_layout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2521">
-              <caret line="206" column="68" lean-forward="false" selection-start-line="206" selection-start-column="68" selection-end-line="206" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,9 +145,9 @@
       <find>finds</find>
       <find>max_iter</find>
       <find>findsame</find>
-      <find>log_interval</find>
       <find>count</find>
       <find>Find</find>
+      <find>log_interval</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,6 +163,7 @@
         <option value="$PROJECT_DIR$/models_clevr/nmn3_modules.py" />
         <option value="$PROJECT_DIR$/models_clevr/nmn3_model.py" />
         <option value="$PROJECT_DIR$/models_clevr/nmn3_assembler.py" />
+        <option value="$PROJECT_DIR$/exp_clevr/train_clevr_scratch.py" />
       </list>
     </option>
   </component>
@@ -367,9 +363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
           <caret line="221" column="41" lean-forward="false" selection-start-line="221" selection-start-column="24" selection-end-line="221" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -386,16 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="124" column="21" lean-forward="false" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp_clevr/train_clevr_gt_layout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2521">
-          <caret line="206" column="68" lean-forward="false" selection-start-line="206" selection-start-column="68" selection-end-line="206" selection-end-column="68" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
@@ -440,16 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_assembler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1859">
@@ -467,6 +441,32 @@
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models_clevr/nmn3_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1115">
+          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp_clevr/train_clevr_gt_layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp_clevr/train_clevr_scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
