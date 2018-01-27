@@ -1,0 +1,395 @@
+Loading imdb from file...Done
+iter = 20
+	loss = 2.498389, accuracy (cur) = 0.281250, accuracy (avg) = 0.036348, entropy = 6.409581, validity = 1.000000
+iter = 40
+	loss = 2.217778, accuracy (cur) = 0.265625, accuracy (avg) = 0.080233, entropy = 6.360055, validity = 1.000000
+iter = 60
+	loss = 2.026754, accuracy (cur) = 0.281250, accuracy (avg) = 0.121594, entropy = 4.514345, validity = 1.000000
+iter = 80
+	loss = 1.883080, accuracy (cur) = 0.375000, accuracy (avg) = 0.161499, entropy = 2.646313, validity = 1.000000
+iter = 100
+	loss = 2.084511, accuracy (cur) = 0.296875, accuracy (avg) = 0.199181, entropy = 2.269307, validity = 1.000000
+iter = 120
+	loss = 1.870893, accuracy (cur) = 0.296875, accuracy (avg) = 0.234313, entropy = 1.617260, validity = 1.000000
+iter = 140
+	loss = 1.744476, accuracy (cur) = 0.359375, accuracy (avg) = 0.264610, entropy = 1.035718, validity = 1.000000
+iter = 160
+	loss = 1.426304, accuracy (cur) = 0.468750, accuracy (avg) = 0.296859, entropy = 1.001132, validity = 1.000000
+iter = 180
+	loss = 1.530659, accuracy (cur) = 0.437500, accuracy (avg) = 0.316705, entropy = 0.687875, validity = 1.000000
+iter = 200
+	loss = 1.301525, accuracy (cur) = 0.375000, accuracy (avg) = 0.333358, entropy = 0.716818, validity = 1.000000
+iter = 220
+	loss = 1.104380, accuracy (cur) = 0.421875, accuracy (avg) = 0.349432, entropy = 0.804592, validity = 1.000000
+iter = 240
+	loss = 1.454024, accuracy (cur) = 0.296875, accuracy (avg) = 0.362603, entropy = 0.620670, validity = 1.000000
+iter = 260
+	loss = 1.150591, accuracy (cur) = 0.421875, accuracy (avg) = 0.377549, entropy = 0.603048, validity = 1.000000
+iter = 280
+	loss = 1.494751, accuracy (cur) = 0.312500, accuracy (avg) = 0.383968, entropy = 0.508495, validity = 1.000000
+iter = 300
+	loss = 1.055831, accuracy (cur) = 0.515625, accuracy (avg) = 0.398369, entropy = 0.358207, validity = 1.000000
+iter = 320
+	loss = 1.034734, accuracy (cur) = 0.406250, accuracy (avg) = 0.400387, entropy = 0.359949, validity = 1.000000
+iter = 340
+	loss = 1.175142, accuracy (cur) = 0.468750, accuracy (avg) = 0.408458, entropy = 0.376196, validity = 1.000000
+iter = 360
+	loss = 0.947653, accuracy (cur) = 0.437500, accuracy (avg) = 0.413066, entropy = 0.343900, validity = 1.000000
+iter = 380
+	loss = 1.042607, accuracy (cur) = 0.359375, accuracy (avg) = 0.417455, entropy = 0.367568, validity = 1.000000
+iter = 400
+	loss = 1.063897, accuracy (cur) = 0.421875, accuracy (avg) = 0.421155, entropy = 0.285552, validity = 1.000000
+iter = 420
+	loss = 1.066711, accuracy (cur) = 0.390625, accuracy (avg) = 0.429377, entropy = 0.263167, validity = 1.000000
+iter = 440
+	loss = 1.179351, accuracy (cur) = 0.406250, accuracy (avg) = 0.430571, entropy = 0.260412, validity = 1.000000
+iter = 460
+	loss = 1.091787, accuracy (cur) = 0.453125, accuracy (avg) = 0.428931, entropy = 0.182599, validity = 1.000000
+iter = 480
+	loss = 1.301573, accuracy (cur) = 0.437500, accuracy (avg) = 0.432050, entropy = 0.205708, validity = 1.000000
+iter = 500
+	loss = 1.079641, accuracy (cur) = 0.468750, accuracy (avg) = 0.431853, entropy = 0.233910, validity = 1.000000
+iter = 520
+	loss = 1.111851, accuracy (cur) = 0.296875, accuracy (avg) = 0.432794, entropy = 0.326966, validity = 1.000000
+iter = 540
+	loss = 1.112622, accuracy (cur) = 0.406250, accuracy (avg) = 0.436903, entropy = 0.535646, validity = 1.000000
+iter = 560
+	loss = 0.988469, accuracy (cur) = 0.468750, accuracy (avg) = 0.436874, entropy = 0.216592, validity = 1.000000
+iter = 580
+	loss = 1.037861, accuracy (cur) = 0.437500, accuracy (avg) = 0.437730, entropy = 0.201735, validity = 1.000000
+iter = 600
+	loss = 1.154825, accuracy (cur) = 0.609375, accuracy (avg) = 0.443041, entropy = 0.119213, validity = 1.000000
+iter = 620
+	loss = 0.979445, accuracy (cur) = 0.546875, accuracy (avg) = 0.443433, entropy = 0.196978, validity = 1.000000
+iter = 640
+	loss = 1.024041, accuracy (cur) = 0.484375, accuracy (avg) = 0.443589, entropy = 0.191824, validity = 1.000000
+iter = 660
+	loss = 1.054476, accuracy (cur) = 0.515625, accuracy (avg) = 0.450748, entropy = 0.120583, validity = 1.000000
+iter = 680
+	loss = 1.142868, accuracy (cur) = 0.468750, accuracy (avg) = 0.452786, entropy = 0.129442, validity = 1.000000
+iter = 700
+	loss = 1.368183, accuracy (cur) = 0.406250, accuracy (avg) = 0.457515, entropy = 0.137598, validity = 1.000000
+iter = 720
+	loss = 0.984822, accuracy (cur) = 0.578125, accuracy (avg) = 0.457387, entropy = 0.092257, validity = 1.000000
+iter = 740
+	loss = 1.163494, accuracy (cur) = 0.484375, accuracy (avg) = 0.456982, entropy = 0.184865, validity = 1.000000
+iter = 760
+	loss = 1.051504, accuracy (cur) = 0.437500, accuracy (avg) = 0.455814, entropy = 0.134038, validity = 1.000000
+iter = 780
+	loss = 0.916455, accuracy (cur) = 0.578125, accuracy (avg) = 0.460540, entropy = 0.091162, validity = 1.000000
+iter = 800
+	loss = 0.985047, accuracy (cur) = 0.484375, accuracy (avg) = 0.465652, entropy = 0.110278, validity = 1.000000
+iter = 820
+	loss = 1.007607, accuracy (cur) = 0.468750, accuracy (avg) = 0.465108, entropy = 0.072452, validity = 1.000000
+iter = 840
+	loss = 0.965608, accuracy (cur) = 0.468750, accuracy (avg) = 0.468544, entropy = 0.098530, validity = 1.000000
+iter = 860
+	loss = 1.067619, accuracy (cur) = 0.390625, accuracy (avg) = 0.462289, entropy = 0.111805, validity = 1.000000
+iter = 880
+	loss = 1.007687, accuracy (cur) = 0.468750, accuracy (avg) = 0.464579, entropy = 0.152373, validity = 1.000000
+iter = 900
+	loss = 1.057198, accuracy (cur) = 0.437500, accuracy (avg) = 0.466266, entropy = 0.069034, validity = 1.000000
+iter = 920
+	loss = 1.468008, accuracy (cur) = 0.343750, accuracy (avg) = 0.462741, entropy = 0.073904, validity = 1.000000
+iter = 940
+	loss = 0.913867, accuracy (cur) = 0.546875, accuracy (avg) = 0.464107, entropy = 0.158900, validity = 1.000000
+iter = 960
+	loss = 0.986897, accuracy (cur) = 0.390625, accuracy (avg) = 0.462037, entropy = 0.078222, validity = 1.000000
+iter = 980
+	loss = 1.032790, accuracy (cur) = 0.453125, accuracy (avg) = 0.466977, entropy = 0.104568, validity = 1.000000
+iter = 1000
+	loss = 0.913259, accuracy (cur) = 0.453125, accuracy (avg) = 0.467442, entropy = 0.058770, validity = 1.000000
+iter = 1020
+	loss = 0.995238, accuracy (cur) = 0.453125, accuracy (avg) = 0.467901, entropy = 0.032611, validity = 1.000000
+iter = 1040
+	loss = 0.933298, accuracy (cur) = 0.390625, accuracy (avg) = 0.465059, entropy = 0.074010, validity = 1.000000
+iter = 1060
+	loss = 1.011370, accuracy (cur) = 0.406250, accuracy (avg) = 0.464440, entropy = 0.027559, validity = 1.000000
+iter = 1080
+	loss = 0.945962, accuracy (cur) = 0.500000, accuracy (avg) = 0.467024, entropy = 0.041723, validity = 1.000000
+iter = 1100
+	loss = 1.006600, accuracy (cur) = 0.468750, accuracy (avg) = 0.469669, entropy = 0.032186, validity = 1.000000
+iter = 1120
+	loss = 1.236173, accuracy (cur) = 0.343750, accuracy (avg) = 0.470683, entropy = 0.033632, validity = 1.000000
+iter = 1140
+	loss = 0.973848, accuracy (cur) = 0.453125, accuracy (avg) = 0.474702, entropy = 0.033582, validity = 1.000000
+iter = 1160
+	loss = 0.988477, accuracy (cur) = 0.390625, accuracy (avg) = 0.474048, entropy = 0.030481, validity = 1.000000
+iter = 1180
+	loss = 0.995665, accuracy (cur) = 0.453125, accuracy (avg) = 0.472819, entropy = 0.047470, validity = 1.000000
+iter = 1200
+	loss = 0.989651, accuracy (cur) = 0.484375, accuracy (avg) = 0.468907, entropy = 0.044546, validity = 1.000000
+iter = 1220
+	loss = 1.112938, accuracy (cur) = 0.453125, accuracy (avg) = 0.471076, entropy = 0.054470, validity = 1.000000
+iter = 1240
+	loss = 0.965134, accuracy (cur) = 0.500000, accuracy (avg) = 0.473257, entropy = 0.041806, validity = 1.000000
+iter = 1260
+	loss = 0.989521, accuracy (cur) = 0.453125, accuracy (avg) = 0.473986, entropy = 0.030000, validity = 1.000000
+iter = 1280
+	loss = 1.018662, accuracy (cur) = 0.468750, accuracy (avg) = 0.476898, entropy = 0.094433, validity = 1.000000
+iter = 1300
+	loss = 1.033803, accuracy (cur) = 0.484375, accuracy (avg) = 0.473741, entropy = 0.081249, validity = 1.000000
+iter = 1320
+	loss = 1.047210, accuracy (cur) = 0.515625, accuracy (avg) = 0.474119, entropy = 0.120453, validity = 1.000000
+iter = 1340
+	loss = 1.059939, accuracy (cur) = 0.437500, accuracy (avg) = 0.468627, entropy = 0.046632, validity = 1.000000
+iter = 1360
+	loss = 1.090528, accuracy (cur) = 0.500000, accuracy (avg) = 0.475550, entropy = 0.020758, validity = 1.000000
+iter = 1380
+	loss = 1.111152, accuracy (cur) = 0.437500, accuracy (avg) = 0.475271, entropy = 0.024302, validity = 1.000000
+iter = 1400
+	loss = 0.963529, accuracy (cur) = 0.500000, accuracy (avg) = 0.477397, entropy = 0.032872, validity = 1.000000
+iter = 1420
+	loss = 0.906117, accuracy (cur) = 0.500000, accuracy (avg) = 0.476898, entropy = 0.038331, validity = 1.000000
+iter = 1440
+	loss = 1.057907, accuracy (cur) = 0.437500, accuracy (avg) = 0.477877, entropy = 0.045826, validity = 1.000000
+iter = 1460
+	loss = 0.992534, accuracy (cur) = 0.406250, accuracy (avg) = 0.478868, entropy = 0.087153, validity = 1.000000
+iter = 1480
+	loss = 0.965658, accuracy (cur) = 0.515625, accuracy (avg) = 0.484156, entropy = 0.160139, validity = 1.000000
+iter = 1500
+	loss = 0.970801, accuracy (cur) = 0.562500, accuracy (avg) = 0.485281, entropy = 0.056822, validity = 1.000000
+iter = 1520
+	loss = 0.953867, accuracy (cur) = 0.500000, accuracy (avg) = 0.482677, entropy = 0.116824, validity = 1.000000
+iter = 1540
+	loss = 0.891399, accuracy (cur) = 0.500000, accuracy (avg) = 0.481421, entropy = 0.030462, validity = 1.000000
+iter = 1560
+	loss = 0.898682, accuracy (cur) = 0.390625, accuracy (avg) = 0.480596, entropy = 0.041512, validity = 1.000000
+iter = 1580
+	loss = 0.976463, accuracy (cur) = 0.515625, accuracy (avg) = 0.476978, entropy = 0.020480, validity = 1.000000
+iter = 1600
+	loss = 1.021373, accuracy (cur) = 0.406250, accuracy (avg) = 0.478429, entropy = 0.015416, validity = 1.000000
+iter = 1620
+	loss = 0.992060, accuracy (cur) = 0.468750, accuracy (avg) = 0.480903, entropy = 0.017599, validity = 1.000000
+iter = 1640
+	loss = 1.034785, accuracy (cur) = 0.390625, accuracy (avg) = 0.477221, entropy = 0.025087, validity = 1.000000
+iter = 1660
+	loss = 0.961307, accuracy (cur) = 0.500000, accuracy (avg) = 0.478123, entropy = 0.042898, validity = 1.000000
+iter = 1680
+	loss = 0.980154, accuracy (cur) = 0.406250, accuracy (avg) = 0.479449, entropy = 0.019272, validity = 1.000000
+iter = 1700
+	loss = 1.053881, accuracy (cur) = 0.343750, accuracy (avg) = 0.478416, entropy = 0.018043, validity = 1.000000
+iter = 1720
+	loss = 0.895741, accuracy (cur) = 0.578125, accuracy (avg) = 0.484291, entropy = 0.014470, validity = 1.000000
+iter = 1740
+	loss = 1.253996, accuracy (cur) = 0.468750, accuracy (avg) = 0.485750, entropy = 0.017055, validity = 1.000000
+iter = 1760
+	loss = 0.944471, accuracy (cur) = 0.562500, accuracy (avg) = 0.490329, entropy = 0.017431, validity = 1.000000
+iter = 1780
+	loss = 1.105619, accuracy (cur) = 0.375000, accuracy (avg) = 0.487691, entropy = 0.022236, validity = 1.000000
+iter = 1800
+	loss = 0.998131, accuracy (cur) = 0.453125, accuracy (avg) = 0.490362, entropy = 0.022496, validity = 1.000000
+iter = 1820
+	loss = 0.900787, accuracy (cur) = 0.531250, accuracy (avg) = 0.491551, entropy = 0.010597, validity = 1.000000
+iter = 1840
+	loss = 0.927852, accuracy (cur) = 0.500000, accuracy (avg) = 0.489738, entropy = 0.013354, validity = 1.000000
+iter = 1860
+	loss = 0.914153, accuracy (cur) = 0.593750, accuracy (avg) = 0.490768, entropy = 0.011037, validity = 1.000000
+iter = 1880
+	loss = 0.939630, accuracy (cur) = 0.546875, accuracy (avg) = 0.493819, entropy = 0.011352, validity = 1.000000
+iter = 1900
+	loss = 1.078979, accuracy (cur) = 0.421875, accuracy (avg) = 0.491814, entropy = 0.023077, validity = 1.000000
+iter = 1920
+	loss = 0.968523, accuracy (cur) = 0.437500, accuracy (avg) = 0.491165, entropy = 0.007140, validity = 1.000000
+iter = 1940
+	loss = 0.998047, accuracy (cur) = 0.500000, accuracy (avg) = 0.490074, entropy = 0.011014, validity = 1.000000
+iter = 1960
+	loss = 0.941436, accuracy (cur) = 0.515625, accuracy (avg) = 0.495509, entropy = 0.008428, validity = 1.000000
+iter = 1980
+	loss = 0.843556, accuracy (cur) = 0.593750, accuracy (avg) = 0.490540, entropy = 0.006236, validity = 1.000000
+iter = 2000
+	loss = 0.938383, accuracy (cur) = 0.500000, accuracy (avg) = 0.489480, entropy = 0.023609, validity = 1.000000
+iter = 2020
+	loss = 1.033877, accuracy (cur) = 0.500000, accuracy (avg) = 0.487960, entropy = 0.013247, validity = 1.000000
+iter = 2040
+	loss = 0.963758, accuracy (cur) = 0.343750, accuracy (avg) = 0.493255, entropy = 0.023196, validity = 1.000000
+iter = 2060
+	loss = 0.977279, accuracy (cur) = 0.421875, accuracy (avg) = 0.490785, entropy = 0.017347, validity = 1.000000
+iter = 2080
+	loss = 0.919475, accuracy (cur) = 0.484375, accuracy (avg) = 0.491255, entropy = 0.017523, validity = 1.000000
+iter = 2100
+	loss = 0.901594, accuracy (cur) = 0.609375, accuracy (avg) = 0.495618, entropy = 0.009641, validity = 1.000000
+iter = 2120
+	loss = 0.998145, accuracy (cur) = 0.453125, accuracy (avg) = 0.492999, entropy = 0.007872, validity = 1.000000
+iter = 2140
+	loss = 0.992562, accuracy (cur) = 0.578125, accuracy (avg) = 0.493166, entropy = 0.038994, validity = 1.000000
+iter = 2160
+	loss = 1.039343, accuracy (cur) = 0.406250, accuracy (avg) = 0.493043, entropy = 0.039932, validity = 1.000000
+iter = 2180
+	loss = 0.988348, accuracy (cur) = 0.390625, accuracy (avg) = 0.490619, entropy = 0.042029, validity = 1.000000
+iter = 2200
+	loss = 0.881541, accuracy (cur) = 0.609375, accuracy (avg) = 0.491298, entropy = 0.021515, validity = 1.000000
+iter = 2220
+	loss = 0.941152, accuracy (cur) = 0.484375, accuracy (avg) = 0.490236, entropy = 0.018683, validity = 1.000000
+iter = 2240
+	loss = 0.954947, accuracy (cur) = 0.562500, accuracy (avg) = 0.490851, entropy = 0.010437, validity = 1.000000
+iter = 2260
+	loss = 0.996973, accuracy (cur) = 0.515625, accuracy (avg) = 0.492579, entropy = 0.025509, validity = 1.000000
+iter = 2280
+	loss = 0.920943, accuracy (cur) = 0.578125, accuracy (avg) = 0.491769, entropy = 0.071882, validity = 1.000000
+iter = 2300
+	loss = 1.098298, accuracy (cur) = 0.453125, accuracy (avg) = 0.492421, entropy = 0.025836, validity = 1.000000
+iter = 2320
+	loss = 0.928639, accuracy (cur) = 0.578125, accuracy (avg) = 0.493224, entropy = 0.022102, validity = 1.000000
+iter = 2340
+	loss = 0.886383, accuracy (cur) = 0.500000, accuracy (avg) = 0.494279, entropy = 0.014575, validity = 1.000000
+iter = 2360
+	loss = 0.901148, accuracy (cur) = 0.562500, accuracy (avg) = 0.496326, entropy = 0.015587, validity = 1.000000
+iter = 2380
+	loss = 0.890458, accuracy (cur) = 0.437500, accuracy (avg) = 0.494256, entropy = 0.012725, validity = 1.000000
+iter = 2400
+	loss = 0.859876, accuracy (cur) = 0.578125, accuracy (avg) = 0.495615, entropy = 0.013326, validity = 1.000000
+iter = 2420
+	loss = 0.925017, accuracy (cur) = 0.531250, accuracy (avg) = 0.496810, entropy = 0.007029, validity = 1.000000
+iter = 2440
+	loss = 0.946836, accuracy (cur) = 0.546875, accuracy (avg) = 0.498182, entropy = 0.006607, validity = 1.000000
+iter = 2460
+	loss = 0.917644, accuracy (cur) = 0.453125, accuracy (avg) = 0.498950, entropy = 0.013379, validity = 1.000000
+iter = 2480
+	loss = 0.968333, accuracy (cur) = 0.484375, accuracy (avg) = 0.497759, entropy = 0.019425, validity = 1.000000
+iter = 2500
+	loss = 0.959438, accuracy (cur) = 0.453125, accuracy (avg) = 0.495873, entropy = 0.008802, validity = 1.000000
+iter = 2520
+	loss = 0.929255, accuracy (cur) = 0.453125, accuracy (avg) = 0.499080, entropy = 0.007573, validity = 1.000000
+iter = 2540
+	loss = 0.875094, accuracy (cur) = 0.546875, accuracy (avg) = 0.498575, entropy = 0.007879, validity = 1.000000
+iter = 2560
+	loss = 1.035845, accuracy (cur) = 0.500000, accuracy (avg) = 0.498033, entropy = 0.024165, validity = 1.000000
+iter = 2580
+	loss = 0.907160, accuracy (cur) = 0.515625, accuracy (avg) = 0.503480, entropy = 0.010878, validity = 1.000000
+iter = 2600
+	loss = 1.069507, accuracy (cur) = 0.500000, accuracy (avg) = 0.498788, entropy = 0.030139, validity = 1.000000
+iter = 2620
+	loss = 0.837685, accuracy (cur) = 0.546875, accuracy (avg) = 0.495826, entropy = 0.008483, validity = 1.000000
+iter = 2640
+	loss = 1.133630, accuracy (cur) = 0.421875, accuracy (avg) = 0.493226, entropy = 0.021701, validity = 1.000000
+iter = 2660
+	loss = 0.835109, accuracy (cur) = 0.500000, accuracy (avg) = 0.494424, entropy = 0.032902, validity = 1.000000
+iter = 2680
+	loss = 1.001421, accuracy (cur) = 0.531250, accuracy (avg) = 0.495807, entropy = 0.046078, validity = 1.000000
+iter = 2700
+	loss = 1.023500, accuracy (cur) = 0.406250, accuracy (avg) = 0.495594, entropy = 0.008910, validity = 1.000000
+iter = 2720
+	loss = 0.965206, accuracy (cur) = 0.515625, accuracy (avg) = 0.499948, entropy = 0.006662, validity = 1.000000
+iter = 2740
+	loss = 1.126124, accuracy (cur) = 0.390625, accuracy (avg) = 0.497024, entropy = 0.019549, validity = 1.000000
+iter = 2760
+	loss = 0.863500, accuracy (cur) = 0.562500, accuracy (avg) = 0.500926, entropy = 0.027037, validity = 1.000000
+iter = 2780
+	loss = 1.013302, accuracy (cur) = 0.468750, accuracy (avg) = 0.501857, entropy = 0.272628, validity = 1.000000
+iter = 2800
+	loss = 1.035357, accuracy (cur) = 0.437500, accuracy (avg) = 0.503340, entropy = 0.099653, validity = 1.000000
+iter = 2820
+	loss = 0.915534, accuracy (cur) = 0.484375, accuracy (avg) = 0.500836, entropy = 0.050924, validity = 1.000000
+iter = 2840
+	loss = 0.868714, accuracy (cur) = 0.609375, accuracy (avg) = 0.505499, entropy = 0.066541, validity = 1.000000
+iter = 2860
+	loss = 1.175922, accuracy (cur) = 0.437500, accuracy (avg) = 0.506021, entropy = 0.044865, validity = 1.000000
+iter = 2880
+	loss = 0.861936, accuracy (cur) = 0.578125, accuracy (avg) = 0.504958, entropy = 0.038767, validity = 1.000000
+iter = 2900
+	loss = 1.059851, accuracy (cur) = 0.468750, accuracy (avg) = 0.504013, entropy = 0.058097, validity = 1.000000
+iter = 2920
+	loss = 0.850648, accuracy (cur) = 0.531250, accuracy (avg) = 0.503726, entropy = 0.074785, validity = 1.000000
+iter = 2940
+	loss = 0.949926, accuracy (cur) = 0.531250, accuracy (avg) = 0.505130, entropy = 0.020928, validity = 1.000000
+iter = 2960
+	loss = 0.935748, accuracy (cur) = 0.578125, accuracy (avg) = 0.509011, entropy = 0.010947, validity = 1.000000
+iter = 2980
+	loss = 1.029701, accuracy (cur) = 0.453125, accuracy (avg) = 0.502846, entropy = 0.012240, validity = 1.000000
+iter = 3000
+	loss = 0.931726, accuracy (cur) = 0.562500, accuracy (avg) = 0.502986, entropy = 0.016417, validity = 1.000000
+iter = 3020
+	loss = 0.979761, accuracy (cur) = 0.484375, accuracy (avg) = 0.502180, entropy = 0.021608, validity = 1.000000
+iter = 3040
+	loss = 0.891985, accuracy (cur) = 0.593750, accuracy (avg) = 0.500598, entropy = 0.032191, validity = 1.000000
+iter = 3060
+	loss = 0.996123, accuracy (cur) = 0.421875, accuracy (avg) = 0.503024, entropy = 0.019320, validity = 1.000000
+iter = 3080
+	loss = 0.940511, accuracy (cur) = 0.531250, accuracy (avg) = 0.500075, entropy = 0.017198, validity = 1.000000
+iter = 3100
+	loss = 0.833072, accuracy (cur) = 0.562500, accuracy (avg) = 0.500123, entropy = 0.010035, validity = 1.000000
+iter = 3120
+	loss = 1.056519, accuracy (cur) = 0.343750, accuracy (avg) = 0.495209, entropy = 0.012033, validity = 1.000000
+iter = 3140
+	loss = 0.859209, accuracy (cur) = 0.531250, accuracy (avg) = 0.495391, entropy = 0.008814, validity = 1.000000
+iter = 3160
+	loss = 0.867386, accuracy (cur) = 0.390625, accuracy (avg) = 0.494817, entropy = 0.008384, validity = 1.000000
+iter = 3180
+	loss = 1.036116, accuracy (cur) = 0.484375, accuracy (avg) = 0.497450, entropy = 0.006427, validity = 1.000000
+iter = 3200
+	loss = 0.873829, accuracy (cur) = 0.625000, accuracy (avg) = 0.504684, entropy = 0.008191, validity = 1.000000
+iter = 3220
+	loss = 0.969895, accuracy (cur) = 0.484375, accuracy (avg) = 0.503174, entropy = 0.007807, validity = 1.000000
+iter = 3240
+	loss = 0.773887, accuracy (cur) = 0.578125, accuracy (avg) = 0.508697, entropy = 0.006304, validity = 1.000000
+iter = 3260
+	loss = 0.931643, accuracy (cur) = 0.515625, accuracy (avg) = 0.511850, entropy = 0.013320, validity = 1.000000
+iter = 3280
+	loss = 0.894862, accuracy (cur) = 0.593750, accuracy (avg) = 0.518688, entropy = 0.009794, validity = 1.000000
+iter = 3300
+	loss = 0.936130, accuracy (cur) = 0.609375, accuracy (avg) = 0.521684, entropy = 0.016628, validity = 1.000000
+iter = 3320
+	loss = 0.933506, accuracy (cur) = 0.484375, accuracy (avg) = 0.519198, entropy = 0.013453, validity = 1.000000
+iter = 3340
+	loss = 0.907091, accuracy (cur) = 0.484375, accuracy (avg) = 0.518039, entropy = 0.010571, validity = 1.000000
+iter = 3360
+	loss = 1.011543, accuracy (cur) = 0.546875, accuracy (avg) = 0.519719, entropy = 0.005080, validity = 1.000000
+iter = 3380
+	loss = 0.875826, accuracy (cur) = 0.609375, accuracy (avg) = 0.523775, entropy = 0.008741, validity = 1.000000
+iter = 3400
+	loss = 0.877640, accuracy (cur) = 0.593750, accuracy (avg) = 0.522904, entropy = 0.005889, validity = 1.000000
+iter = 3420
+	loss = 0.932721, accuracy (cur) = 0.515625, accuracy (avg) = 0.522879, entropy = 0.027017, validity = 1.000000
+iter = 3440
+	loss = 0.971913, accuracy (cur) = 0.578125, accuracy (avg) = 0.525739, entropy = 0.007320, validity = 1.000000
+iter = 3460
+	loss = 0.778901, accuracy (cur) = 0.671875, accuracy (avg) = 0.525414, entropy = 0.013435, validity = 1.000000
+iter = 3480
+	loss = 0.923155, accuracy (cur) = 0.531250, accuracy (avg) = 0.525750, entropy = 0.011944, validity = 1.000000
+iter = 3500
+	loss = 1.091358, accuracy (cur) = 0.515625, accuracy (avg) = 0.524709, entropy = 0.005775, validity = 1.000000
+iter = 3520
+	loss = 0.852481, accuracy (cur) = 0.640625, accuracy (avg) = 0.527010, entropy = 0.007981, validity = 1.000000
+iter = 3540
+	loss = 0.888960, accuracy (cur) = 0.593750, accuracy (avg) = 0.529173, entropy = 0.005768, validity = 1.000000
+iter = 3560
+	loss = 0.938155, accuracy (cur) = 0.531250, accuracy (avg) = 0.529270, entropy = 0.011076, validity = 1.000000
+iter = 3580
+	loss = 0.988073, accuracy (cur) = 0.453125, accuracy (avg) = 0.528725, entropy = 0.007187, validity = 1.000000
+iter = 3600
+	loss = 0.784560, accuracy (cur) = 0.625000, accuracy (avg) = 0.529271, entropy = 0.007878, validity = 1.000000
+iter = 3620
+	loss = 0.970146, accuracy (cur) = 0.500000, accuracy (avg) = 0.528462, entropy = 0.009591, validity = 1.000000
+iter = 3640
+	loss = 0.999591, accuracy (cur) = 0.531250, accuracy (avg) = 0.531073, entropy = 0.008241, validity = 1.000000
+iter = 3660
+	loss = 0.900989, accuracy (cur) = 0.421875, accuracy (avg) = 0.530165, entropy = 0.004971, validity = 1.000000
+iter = 3680
+	loss = 0.913069, accuracy (cur) = 0.562500, accuracy (avg) = 0.531285, entropy = 0.012895, validity = 1.000000
+iter = 3700
+	loss = 0.856239, accuracy (cur) = 0.609375, accuracy (avg) = 0.529958, entropy = 0.006046, validity = 1.000000
+iter = 3720
+	loss = 0.950112, accuracy (cur) = 0.531250, accuracy (avg) = 0.532054, entropy = 0.010654, validity = 1.000000
+iter = 3740
+	loss = 1.070149, accuracy (cur) = 0.453125, accuracy (avg) = 0.534087, entropy = 0.058981, validity = 1.000000
+iter = 3760
+	loss = 0.856563, accuracy (cur) = 0.500000, accuracy (avg) = 0.533035, entropy = 0.029159, validity = 1.000000
+iter = 3780
+	loss = 0.878098, accuracy (cur) = 0.609375, accuracy (avg) = 0.534163, entropy = 0.039864, validity = 1.000000
+iter = 3800
+	loss = 0.857295, accuracy (cur) = 0.531250, accuracy (avg) = 0.534864, entropy = 0.009240, validity = 1.000000
+iter = 3820
+	loss = 0.806794, accuracy (cur) = 0.546875, accuracy (avg) = 0.533837, entropy = 0.008963, validity = 1.000000
+iter = 3840
+	loss = 0.961957, accuracy (cur) = 0.421875, accuracy (avg) = 0.531206, entropy = 0.009968, validity = 1.000000
+iter = 3860
+	loss = 0.853997, accuracy (cur) = 0.578125, accuracy (avg) = 0.531133, entropy = 0.033657, validity = 1.000000
+iter = 3880
+	loss = 0.824537, accuracy (cur) = 0.609375, accuracy (avg) = 0.536113, entropy = 0.071862, validity = 1.000000
+iter = 3900
+	loss = 0.819677, accuracy (cur) = 0.562500, accuracy (avg) = 0.539478, entropy = 0.086801, validity = 1.000000
+iter = 3920
+	loss = 0.904622, accuracy (cur) = 0.468750, accuracy (avg) = 0.533892, entropy = 0.029371, validity = 1.000000
+iter = 3940
+	loss = 0.971314, accuracy (cur) = 0.546875, accuracy (avg) = 0.533685, entropy = 0.017925, validity = 1.000000
