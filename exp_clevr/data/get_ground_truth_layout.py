@@ -2,12 +2,12 @@ import json
 import numpy as np
 
 function2module = {
-    'filter_color': '_Filter',
+    'filter_color': '_FilterColor',
     'filter_material': '_Filter',
     'filter_shape': '_Filter',
     'filter_size': '_Filter',
 
-    'same_color': '_FindSameProperty',
+    'same_color': '_FindSamePropertyColor',
     'same_material': '_FindSameProperty',
     'same_shape': '_FindSameProperty',
     'same_size': '_FindSameProperty',
