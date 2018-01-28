@@ -1,4 +1,5 @@
 from __future__ import absolute_import, division, print_function
+import sys
 
 import argparse
 parser = argparse.ArgumentParser()
@@ -233,7 +234,8 @@ def run_training(max_iter, dataset_trn):
                 # baseline_ph: sess.run(baseline),
                 validity_ph: validity})
             log_writer.add_summary(summary, n_iter+1)
-
+        sys.stdout.flush()
+        
         # Save snapshot
         if (n_iter+1) % snapshot_interval == 0 or (n_iter+1) == max_iter:
             snapshot_file = os.path.join(snapshot_dir, "%08d" % (n_iter+1))

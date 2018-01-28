@@ -136,13 +136,25 @@ class NMN3Model:
                                            ('batch_idx', td.Scalar('int32'))])
                 case_describe_color = case_describe_color >> \
                                 td.Function(modules.DescribeColorModule)
-                # _SameProperty
+                # _SamePropertyColor
                 case_same_property_color = td.Record([('input_0', att_expr_decl()),
                                                 ('input_1', att_expr_decl()),
                                                 ('time_idx', td.Scalar('int32')),
                                                 ('batch_idx', td.Scalar('int32'))])
                 case_same_property_color = case_same_property_color >> \
                                      td.Function(modules.SamePropertyColorModule)
+
+                # _Filter
+                case_filter_color = td.Record([('input_0', att_expr_decl()),
+                                         ('time_idx', td.Scalar(dtype='int32')),
+                                         ('batch_idx', td.Scalar(dtype='int32'))])
+                case_filter_color = case_filter_color >> td.Function(modules.FilterColorModule)
+                # _FindSameProperty
+                case_find_same_property_color = td.Record([('input_0', att_expr_decl()),
+                                                     ('time_idx', td.Scalar(dtype='int32')),
+                                                     ('batch_idx', td.Scalar(dtype='int32'))])
+                case_find_same_property_color = case_find_same_property_color >> \
+                                          td.Function(modules.FindSamePropertyColorModule)
 
                 recursion_cases = td.OneOf(td.GetItem('module'), {
                     '_Scene': case_scene,
@@ -151,7 +163,10 @@ class NMN3Model:
                     '_FindSameProperty': case_find_same_property,
                     '_Transform': case_transform,
                     '_And': case_and,
-                    '_Or': case_or})
+                    '_Or': case_or,
+                    '_FilterColor': case_filter_color,
+                    '_FindSamePropertyColor': case_find_same_property_color
+                })
                 att_expr_decl.resolve_to(recursion_cases)
 
                 # For invalid expressions, define a dummy answer

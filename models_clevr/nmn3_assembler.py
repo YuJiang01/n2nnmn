@@ -22,7 +22,9 @@ _module_input_num = {
     '_SameProperty': 2,
     '_Describe': 1,
     '_SamePropertyColor': 2,
-    '_DescribeColor': 1}
+    '_DescribeColor': 1,
+    '_FilterColor': 1,
+    '_FindSamePropertyColor': 1}
 
 # output type of each module
 _module_output_type = {
@@ -41,7 +43,9 @@ _module_output_type = {
     '_SameProperty': 'ans',
     '_Describe': 'ans',
     '_SamePropertyColor': 'ans',
-    '_DescribeColor': 'ans'}
+    '_DescribeColor': 'ans',
+    '_FilterColor': 'att',
+    '_FindSamePropertyColor': 'att'}
 
 INVALID_EXPR = 'INVALID_EXPR'
 # decoding validity: maintaining a state x of [#att, #ans, T_remain]

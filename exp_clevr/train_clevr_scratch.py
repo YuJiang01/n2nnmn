@@ -1,4 +1,6 @@
 from __future__ import absolute_import, division, print_function
+import sys
+
 
 import argparse
 parser = argparse.ArgumentParser()
@@ -217,6 +219,7 @@ def run_training(max_iter, dataset_trn):
                   "accuracy (avg) = %f, entropy = %f, validity = %f" %
                   (n_iter+1, avg_sample_loss_val, accuracy,
                    avg_accuracy, -entropy_reg_val, validity))
+            sys.stdout.flush()
             summary = sess.run(log_step_trn, {
                 loss_ph: avg_sample_loss_val,
                 entropy_ph: -entropy_reg_val,
